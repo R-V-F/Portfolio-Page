@@ -1,6 +1,62 @@
-.chompers-class {
-    font-size: 70px;
-    font-weight: bolder;
-    color: white;
-    margin-left:40%;
+.main_container {
+    display:grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: 7vh 80vh 7vh 80vh 80vh 80vh 60vh 80vh 80vh;
+    grid-template-areas: 
+        "nav nav nav"
+        "side1 greetings side2"
+        "side1 project-txt side2"
+        "side1 p1 side2"
+        "side1 p2 side2"
+        "side1 p3 side2"
+        "side1 about side2"
+        "side1 chat side2"
+        "side1 contact side2";
+
+}
+
+nav {
+    background: rgb(189, 242, 189);
+    grid-area: nav;
+}
+
+#side1 {
+    background: rgb(72, 255, 72);
+    grid-area: side1;
+}
+#side2 {
+    background: rgb(72, 197, 235);
+    grid-area: side2;
+}
+#greetings {
+    background: rgb(54, 165, 208);
+    grid-area: greetings;
+}
+#project-txt {
+    background: rgb(60, 98, 60);
+    grid-area: project-txt;
+}
+#p1 {
+    background: rgb(135, 101, 238);
+    grid-area: p1;
+}
+#p2 {
+    background: rgb(93, 71, 160);
+    grid-area: p2;
+}
+#p3 {
+    background: rgb(31, 23, 55);
+    grid-area: p3;
+}
+#about {
+    background: rgb(196, 181, 239);
+    grid-area: about;
+}
+#chat {
+    background: rgb(44, 66, 44);
+    grid-area: chat;
+}
+#contact {
+    background: rgb(138, 208, 138);
+    grid-area: contact;
 }
