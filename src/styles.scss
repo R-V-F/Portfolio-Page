@@ -1,5 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 html {
-    //background-color: rgb(12, 32, 52);
-    background-image: linear-gradient(to bottom right, rgb(4, 11, 17), rgb(24, 62, 99));
+    //background-color: rgb(4, 11, 17);
+    // background-image: linear-gradient(to top left, rgb(4, 11, 17), rgb(24, 62, 99));
+    background: rgb(19,49,78);
+    background: linear-gradient(0deg, rgba(19,49,78,1) 21%, rgba(7,21,33,1) 87%);
 }
+//html, body { height: 100%; }
+body { margin: 0; font-family:'Times New Roman', Times, serif;}

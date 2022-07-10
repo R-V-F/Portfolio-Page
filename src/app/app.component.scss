@@ -1,10 +1,10 @@
 .main_container {
     color: white;
     display:grid;
-    grid-template-columns: 0.8fr 5fr 0.8fr;
+    grid-template-columns: 1.1fr 5fr 1.1fr;
     grid-template-rows: 5vh 70vh 7vh 80vh 80vh 80vh 60vh 80vh 80vh;
     grid-template-areas: 
-        "nav nav nav"
+        "side1 nav side2"
         "side1 greetings side2"
         "side1 project-txt side2"
         "side1 p1 side2"
@@ -21,7 +21,6 @@ nav {
     text-align: end;
     grid-area: nav;
     font-size: 25px;
-    padding-right: 2.3em;
 }
 
 #side1 {
@@ -34,6 +33,7 @@ nav {
 }
 #greetings {
     grid-area: greetings;
+    //background-image: url("/assets/dev2.png")
 }
 #project-txt {
     background: rgb(60, 98, 60);
