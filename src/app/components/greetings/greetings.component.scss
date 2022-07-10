@@ -8,32 +8,25 @@
 .hello {
     grid-area: hello;
     //border: 1px solid;
-    padding-top: 15%;
+    padding-top: 9%;
     //padding-left: 10%;
     text-align: left;
-    font-family:'Times New Roman', Times, serif;
+    font-family:monospace;
 }
 .img1 {
     grid-area:img1;
-    padding-right: 0em;
-    padding-top: 4em;
     //filter: brightness(2);
     //border: 1px solid;
+    //background-image: radial-gradient(circle, rgb(255, 255, 255), rgb(71, 118, 165), rgba(7,21,33,1) 60%);
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.dude-png {
+    height: 500px;
+    width: 430px;
     background-image: radial-gradient(circle, rgb(255, 255, 255), rgb(71, 118, 165), rgba(7,21,33,1) 60%);
-<<<<<<< HEAD
-=======
 }
-
-img {
-    //background-image: radial-gradient(circle, rgb(255, 255, 255), rgb(71, 118, 165), rgb(4, 11, 17) 50%);
-    // filter: brightness(1);
->>>>>>> 187aec1e97001dadccedb3fb751e75d339fb9dc3
-}
-
-// img {
-//     //background-image: radial-gradient(circle, rgb(255, 255, 255), rgb(71, 118, 165), rgb(4, 11, 17) 50%);
-//     // filter: brightness(1);
-// }
 
 .tab {
     padding-left: 8%;
@@ -44,25 +37,23 @@ p {
 }
 
 .intro {
-    font-size: 20px;
-<<<<<<< HEAD
+    opacity: 95%;
+    font-size: 17px;
     //margin-bottom: -1.6em;
-=======
-    margin-bottom: -1.6em;
->>>>>>> 187aec1e97001dadccedb3fb751e75d339fb9dc3
 }
 
 .name {
     line-height: 100%;
+    margin-top: 0.6em;
+}
+.name2 {
+    font-size: 45px;
+    line-height: 100%;
+    margin-bottom: 0.6em;
 }
 
 .last {
     font-size: 25px;
-<<<<<<< HEAD
-    //margin-top: -1.6em;
-=======
-    margin-top: -1.6em;
->>>>>>> 187aec1e97001dadccedb3fb751e75d339fb9dc3
 }
 
 .silver {
@@ -86,7 +77,6 @@ p {
 .btn {
     background-color: orange;
     color: black;
-    font-weight: 700;
     padding-top: 1px;
 
 }
@@ -97,17 +87,30 @@ p {
     margin-left: -1.8px;
 }
 
+.assets {
+    color: orange;
+    opacity: 100%;
+}
+
+
 
 @media only screen and (max-width: 500px) {
+
     .container {
+        margin-top: 0;
         grid-template-columns: 1fr;
         grid-template-areas: 
             "hello";
+        display: flex;
+        align-items: center;
     }
     .img1 {
         display: none;
     }
     .tab {
-        padding-left: 18%;
+        padding-left: 5%;
+    }
+    .hello {
+        //padding-top: 30%;
     }
 }
