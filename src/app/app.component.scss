@@ -2,7 +2,7 @@
     color: white;
     display:grid;
     grid-template-columns: 1.1fr 5fr 1.1fr;
-    grid-template-rows: 10vh auto 7vh 80vh 80vh 80vh 60vh 80vh 80vh;
+    grid-template-rows: 10vh auto 7vh auto 80vh 80vh 60vh 80vh 80vh;
     grid-template-areas: 
         "side1 nav side2"
         "side1 greetings side2"
@@ -73,7 +73,7 @@ nav {
 @media only screen and (max-width: 500px) {
     .main_container {
         grid-template-columns: 1fr;
-        grid-template-rows: 7vh 93vh 7vh 80vh 80vh 80vh 60vh 80vh 80vh;
+        grid-template-rows: 7vh auto 7vh auto 80vh 80vh 60vh 80vh 80vh;
         grid-template-areas: 
             "nav"
             "greetings"

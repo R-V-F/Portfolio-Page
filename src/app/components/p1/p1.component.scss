@@ -1,7 +1,7 @@
 .container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 8vh 60vh auto;
+    grid-template-rows: 7vh auto auto;
     grid-template-areas: 
         "header"
         "video"
@@ -10,17 +10,27 @@
 
 header {
     grid-area: header;
-    border: 1px solid;
+    //border: 1px solid;
     font-size: 40px;
+    text-align: left;
 
 }
 
 .video {
     grid-area: video;
-    border: 1px solid;
+    //border: 1px solid;
 }
 
 .description {
     grid-area: description;
     border: 1px solid;
+}
+
+.grey {
+    opacity: 75%;
+    font-size: 30px;
+}
+
+.tab {
+    padding-left: 4%;
 }
