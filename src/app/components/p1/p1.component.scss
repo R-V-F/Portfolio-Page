@@ -1,0 +1,26 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 8vh 60vh auto;
+    grid-template-areas: 
+        "header"
+        "video"
+        "description";
+}
+
+header {
+    grid-area: header;
+    border: 1px solid;
+    font-size: 40px;
+
+}
+
+.video {
+    grid-area: video;
+    border: 1px solid;
+}
+
+.description {
+    grid-area: description;
+    border: 1px solid;
+}
