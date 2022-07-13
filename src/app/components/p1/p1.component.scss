@@ -6,6 +6,7 @@
         "header"
         "video"
         "description";
+    text-align: left;
 }
 
 header {
@@ -21,9 +22,15 @@ header {
     //border: 1px solid;
 }
 
+video {
+    width: 100%;
+    height: auto;
+    border-radius: 1px;
+}
+
 .description {
-    grid-area: description;
-    border: 1px solid;
+    //border: 1px solid;
+    font-size: 17px;
 }
 
 .grey {
@@ -33,4 +40,27 @@ header {
 
 .tab {
     padding-left: 4%;
+}
+
+.bold {
+    font-weight: 500;
+}
+
+.subcontainer {
+    grid-area: description;
+    display: flex;
+    flex-direction: column;
+}
+
+.toggler {
+    border: 0;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+
+@media only screen and (max-width: 500px) {
+
+    video {
+        width: 99%;
+    }
 }

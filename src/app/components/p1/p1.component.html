@@ -1,14 +1,21 @@
 <div class="container">
     <header>
         <br>
-        <span class="tab"></span><span class="grey">dot</span>Canvas
+        <span class="grey">dot</span>Canvas
         <br>
     </header>
-    <div class="video">
-        <!-- <video src="assets/v1.mp4" controls width="900px" height="675px"></video> -->
+    <div class="subcontainer">
+        <mat-button-toggle-group class="toggler">
+            <mat-button-toggle checked (change)="toggleShort()"><span class="bold">Short</span></mat-button-toggle>
+            <mat-button-toggle  (change)="toggleLong()"><span class="bold">Long</span></mat-button-toggle>
+        </mat-button-toggle-group>
+        <div class="description" mat-elevation-z9>
+            <app-long *ngIf="long_dscr"></app-long>
+            <app-short *ngIf="!long_dscr"></app-short>
+        </div>
     </div>
-    <div class="description">
-        <h1>patito</h1>
-        <p>putiti</p>
+
+    <div class="video">
+        <video src="assets/v1.mp4" controls></video>
     </div>
 </div>

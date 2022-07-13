@@ -8,8 +8,17 @@ import { Component, OnInit } from '@angular/core';
 export class P1Component implements OnInit {
 
   constructor() { }
+  long_dscr = false;
 
   ngOnInit(): void {
+    
+  }
+
+  toggleShort() {
+    this.long_dscr = false;
+  }
+  toggleLong() {
+    this.long_dscr = true;
   }
 
 }
