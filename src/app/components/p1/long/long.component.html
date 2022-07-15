@@ -1,7 +1,7 @@
 <h1>Overview</h1>
 <p>
     <span class="grey">dot</span>Canvas is an <a href="">r/place</a> inspired app. The idea is to provide users
-    with a canvas, where they can zoom in and place pixels on it. Anyone connected will be able to
+    with a canvas and let them zoom in to place pixels on it. Anyone connected will be able to
     see the pixels being placed live, which gives the site a 'lively' feel (when populated).</p>
 <p>
 <p>
@@ -9,7 +9,7 @@
     without a user base interacting with it, it did serve as a good template project. For once, it helped me learn more about 
     <span class="orange">Typescript</span>, <span class="orange">Angular</span> and <span class="orange">Firebase</span>,
     incorporating it all into a fullstack application. Moreover, it also gave me a lot of insight into how to think about
-    the page structure and how to interact with it. All the while inspiring me with new ideas!
+    the page structure and how to interact with it.
 </p>
 
 
@@ -18,29 +18,54 @@
 
 <h1>Challenges</h1>
 <p>
-    Since I'm using <span class="orange">Firebase</span> as the backend - plus not having to worry about scalability issues -
-    most of the implementation challenges falls into the frontend side. In particular, the issues that emmerge when changing the
+    Since I'm using <span class="orange">Firebase</span> to handle the backend, - plus not having to worry about scalability issues -
+    most of the implementation challenges fell into the frontend side. In particular, the issues that emmerge when changing the
     scale of the canvas, while keeping track of where the tiles must be placed.
 </p>
 <h2>Scaling the canvas</h2>
     <img src="assets/scaling.png" alt="">
+<br>
+<br>
+<p>
+    This is the 'trick' that inspired me to do this project (check out <a href="">How We Built r/Place</a> for more details). 
+    The idea is to wrap the canvas with a div, then apply scaling to the div in order to scale the canvas. When I tried it,
+    it worked so well I became really inspired to do my version of the implementation.
+</p>
 
 <h2>Positioning the view</h2>
     <img src="assets/positioning.png" alt="">
+<br>
+<br>
+<p>
+    After learning how to scale the canvas, the next step was to position the scaled canvas at the clicked pixel.
+</p>
+<p>
+    I was strugling with it in the beggining, becasue, after scaling, it was hard to know by how much I had to offset the canvas
+    in order to keep the clicked pixel at the center of the screen. 
+</p>
+<p>
+    The solution I found was to set <span class="spec">TransformOrigin</span> to a corner (in this case 'top left'). This puts
+    the scaled canvas at (0,0) of the viewport. Then, to center on the clicked pixel, I just added half of the 
+    clients width/height to the scaled canvas. 
+</p>
 
-<h2>Aligning Draw Guide</h2>
+
+<h2>Aligning the Draw Guide</h2>
     <img src="assets/align1.png" alt="">
+<br>
+<br>
+<p>
+    The Draw Guide was probably the hardest part of the project, because it must always stays centered relative to the view. 
+    Plus, it must highlight only the correct pixels that are going to be painted. 
+</p>
+<p>
+    To do so, I divided the canvas into squares with sides equal to the size of the scale. Then, I search for the closest intersection
+    relative to the clicked coordinate and defined that as the origin of the drawing guide.
+</p>
     <img src="assets/align_mid.png" alt="">
     <img src="assets/find_intersection.png" alt="">
+<p>
+    Finally, I offset the position by half of the selected brush size times the scale.
+</p>
     <img src="assets/offset mid top.png" alt="">
     <img src="assets/set guide pos.png" alt="">
-
-<h2>Click'n drag</h2>
-
-<h1>Front-End</h1>
-<h1>Back-End</h1>
-
-
-
-
-
