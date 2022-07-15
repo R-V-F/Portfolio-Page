@@ -1,14 +1,14 @@
 <h1>Overview</h1>
 <p>
-    <span class="grey">dot</span>Canvas is an <a href="">r/place</a> inspired app. The idea is to provide users
+    <span class="grey">dot</span>Canvas is an <a href="https://www.reddit.com/r/place/">r/place</a> inspired app. The idea is to provide users
     with a canvas and let them zoom in to place pixels on it. Anyone connected will be able to
     see the pixels being placed live, which gives the site a 'lively' feel (when populated).</p>
 <p>
 <p>
-    Even though the project does not aim to solve a particular business problem, nor is it particularly entretaining
-    without a user base interacting with it, it did serve as a good template project. For once, it helped me learn more about 
+    Even though the project does not aim to solve a particular business problem, nor is it particularly entertaining
+    without a user base interacting with it, it served as a good template project. For once, it helped me learn more about 
     <span class="orange">Typescript</span>, <span class="orange">Angular</span> and <span class="orange">Firebase</span>,
-    incorporating it all into a fullstack application. Moreover, it also gave me a lot of insight into how to think about
+    incorporating it all into a full stack application. Moreover, it also gave me a lot of insight into how to think about
     the page structure and how to interact with it.
 </p>
 
@@ -27,9 +27,9 @@
 <br>
 <br>
 <p>
-    This is the 'trick' that inspired me to do this project (check out <a href="">How We Built r/Place</a> for more details). 
+    This is the 'trick' that inspired me to do this project (check out <a href="https://www.redditinc.com/blog/how-we-built-rplace/">How We Built r/Place</a> for more details). 
     The idea is to wrap the canvas with a div, then apply scaling to the div in order to scale the canvas. When I tried it,
-    it worked so well I became really inspired to do my version of the implementation.
+    it worked so well that I became really inspired to do my version of the implementation.
 </p>
 
 <h2>Positioning the view</h2>
@@ -40,13 +40,13 @@
     After learning how to scale the canvas, the next step was to position the scaled canvas at the clicked pixel.
 </p>
 <p>
-    I was strugling with it in the beggining, becasue, after scaling, it was hard to know by how much I had to offset the canvas
+    I was struggling with it in the beginning, because, after scaling, it was hard to know by how much I had to offset the canvas
     in order to keep the clicked pixel at the center of the screen. 
 </p>
 <p>
     The solution I found was to set <span class="spec">TransformOrigin</span> to a corner (in this case 'top left'). This puts
-    the scaled canvas at (0,0) of the viewport. Then, to center on the clicked pixel, I just added half of the 
-    clients width/height to the scaled canvas. 
+    the scaled canvas at (0,0) of the viewport. Then,  I just had to offset the canvas by half of the clients' width/height 
+    plus the value of the scaled coordinates. 
 </p>
 
 
@@ -55,8 +55,8 @@
 <br>
 <br>
 <p>
-    The Draw Guide was probably the hardest part of the project, because it must always stays centered relative to the view. 
-    Plus, it must highlight only the correct pixels that are going to be painted. 
+    The Draw Guide was probably the hardest part of the project, because it must always stay centered relative to the view. 
+    Plus, it must stay in sync with the correct pixels that will be painted. 
 </p>
 <p>
     To do so, I divided the canvas into squares with sides equal to the size of the scale. Then, I search for the closest intersection
