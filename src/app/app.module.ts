@@ -11,6 +11,9 @@ import { ProjectTemplateComponent } from './components/project-template/project-
 import { P1Component } from './components/p1/p1.component';
 import { ShortComponent } from './components/p1/short/short.component';
 import { LongComponent } from './components/p1/long/long.component';
+import { P2Component } from './components/p2/p2.component';
+import { Short2Component } from './components/p2/short2/short2.component';
+import { Long2Component } from './components/p2/long2/long2.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { LongComponent } from './components/p1/long/long.component';
     ProjectTemplateComponent,
     P1Component,
     ShortComponent,
-    LongComponent
+    LongComponent,
+    P2Component,
+    Short2Component,
+    Long2Component
   ],
   imports: [
     BrowserModule,

@@ -2,7 +2,7 @@
     color: white;
     display:grid;
     grid-template-columns: 1.1fr 5fr 1.1fr;
-    grid-template-rows: 10vh auto 7vh auto 80vh 80vh 60vh 80vh 80vh;
+    grid-template-rows: 10vh auto 7vh auto auto 80vh 60vh 80vh 80vh;
     grid-template-areas: 
         "side1 nav side2"
         "side1 greetings side2"
@@ -49,7 +49,6 @@ nav {
     grid-area: p1;
 }
 #p2 {
-    background: rgb(93, 71, 160);
     grid-area: p2;
 }
 #p3 {
