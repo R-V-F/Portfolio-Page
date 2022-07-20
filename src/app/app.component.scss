@@ -2,7 +2,7 @@
     color: white;
     display:grid;
     grid-template-columns: 1.1fr 5fr 1.1fr;
-    grid-template-rows: 10vh auto 7vh auto auto 60vh 80vh;
+    grid-template-rows: 10vh auto 7vh auto auto 45vh 80vh;
     grid-template-areas: 
         "side1 nav side2"
         "side1 greetings side2"
@@ -54,7 +54,6 @@ nav {
     grid-area: p3;
 }
 #about {
-    background: rgb(196, 181, 239);
     grid-area: about;
 }
 #chat {
@@ -64,6 +63,10 @@ nav {
 #contact {
     background: rgb(138, 208, 138);
     grid-area: contact;
+}
+
+.grey {
+    opacity: 75%;
 }
 
 
