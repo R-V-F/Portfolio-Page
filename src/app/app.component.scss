@@ -2,16 +2,14 @@
     color: white;
     display:grid;
     grid-template-columns: 1.1fr 5fr 1.1fr;
-    grid-template-rows: 10vh auto 7vh auto auto 80vh 60vh 80vh 80vh;
+    grid-template-rows: 10vh auto 7vh auto auto 60vh 80vh;
     grid-template-areas: 
         "side1 nav side2"
         "side1 greetings side2"
         "side1 project-txt side2"
         "side1 p1 side2"
         "side1 p2 side2"
-        "side1 p3 side2"
         "side1 about side2"
-        "side1 chat side2"
         "side1 contact side2";
     text-align: center;
     font-family:monospace;
@@ -72,16 +70,15 @@ nav {
 @media only screen and (max-width: 500px) {
     .main_container {
         grid-template-columns: 1fr;
-        grid-template-rows: 7vh auto 7vh auto 80vh 80vh 60vh 80vh 80vh;
+        grid-template-rows: 7vh auto 7vh auto auto 60vh 80vh;
         grid-template-areas: 
             "nav"
             "greetings"
             "project-txt"
             "p1"
             "p2"
-            "p3"
             "about"
-            "chat"
+            // "chat"
             "contact";
     }
 }

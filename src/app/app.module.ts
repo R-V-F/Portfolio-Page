@@ -7,26 +7,26 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GreetingsComponent } from './components/greetings/greetings.component';
 import { NavComponent } from './components/nav/nav.component';
-import { ProjectTemplateComponent } from './components/project-template/project-template.component';
 import { P1Component } from './components/p1/p1.component';
 import { ShortComponent } from './components/p1/short/short.component';
 import { LongComponent } from './components/p1/long/long.component';
 import { P2Component } from './components/p2/p2.component';
 import { Short2Component } from './components/p2/short2/short2.component';
 import { Long2Component } from './components/p2/long2/long2.component';
+import { AboutComponent } from './components/about/about.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     GreetingsComponent,
     NavComponent,
-    ProjectTemplateComponent,
     P1Component,
     ShortComponent,
     LongComponent,
     P2Component,
     Short2Component,
-    Long2Component
+    Long2Component,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
