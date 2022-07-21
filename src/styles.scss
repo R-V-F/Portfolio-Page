@@ -1,15 +1,17 @@
+// /* Importing Bootstrap SCSS file. */
+// @import "~bootstrap/scss/bootstrap";
+
+// /* Importing Datepicker SCSS file. */
+// @import "node_modules/ngx-bootstrap/datepicker/bs-datepicker";
+
+
 /* You can add global styles to this file, and also import other style files */
-html {
+html body {
     //background-color: rgb(4, 11, 17);
     // background-image: linear-gradient(to top left, rgb(4, 11, 17), rgb(24, 62, 99));
-    background: rgb(19,49,78);
-    background: linear-gradient(0deg, rgba(19,49,78,1) 21%, rgba(7,21,33,1) 87%);
+    background: rgb(19,49,78) !important;
+    background: linear-gradient(0deg, rgba(19,49,78,1) 21%, rgba(7,21,33,1) 87%) !important;
+    margin: 0; 
+    font-family: monospace;
 }
 //html, body { height: 100%; }
-body { margin: 0; font-family: monospace;}
-
-/* Importing Bootstrap SCSS file. */
-@import "~bootstrap/scss/bootstrap";
-
-/* Importing Datepicker SCSS file. */
-@import "node_modules/ngx-bootstrap/datepicker/bs-datepicker";

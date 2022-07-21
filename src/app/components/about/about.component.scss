@@ -19,6 +19,13 @@ p {
         "side1 about side2";
 }
 
+.line-wrap {
+    color:orange;
+}
+.line {
+    margin-left: -10px;
+}
+
 #side1 {
     grid-area: side1;
 }

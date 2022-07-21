@@ -1,3 +1,9 @@
+/* Importing Bootstrap SCSS file. */
+@import "~bootstrap/scss/bootstrap";
+
+/* Importing Datepicker SCSS file. */
+@import "node_modules/ngx-bootstrap/datepicker/bs-datepicker";
+
 .title {
     font-size: 38px;
     color: whitesmoke;
@@ -13,12 +19,62 @@ p {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 7fr 1fr;
+    grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: 
         "side1 contact-txt side2"
         "side1 contact-form side2";
 }
+
+.line-wrap {
+    color:orange;
+}
+.line {
+    margin-left: -10px;
+}
+
+.form-control {
+    background-color: black;
+    //border-radius: none;
+}
+
+.form-control:focus {
+    background-color: black;
+}
+
+.msg {
+    height: 7em;
+}
+
+.btn {
+
+    background-color: orange;
+    color: black;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.edge {
+    border-radius: 0;
+}
+
+input, textarea {
+    color: white !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #side1 {
     grid-area: side1;

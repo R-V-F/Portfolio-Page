@@ -6,9 +6,31 @@
         <br>
         <br>
         <br>
-        <span class="title"> <span class="grey">&#123;</span> Contact Me <span class="grey">&#125;</span> </span>
+        
+        <span class="title">
+            <span class="line-wrap"> -<span class="line">-</span><span class="line">-</span><span class="line">-</span><span class="line">-</span><span class="line">-</span><span class="line">-</span><span class="line">-</span><span class="line">-</span><span class="line">-</span><span class="line">-</span></span>
+            <span class="grey"> &#123;</span> Contact Me <span class="grey">&#125; </span>
+            <span class="line-wrap"> -<span class="line">-</span><span class="line">-</span><span class="line">-</span><span class="line">-</span><span class="line">-</span><span class="line">-</span><span class="line">-</span><span class="line">-</span><span class="line">-</span><span class="line">-</span></span>
+        </span>
     </div>
     <div id="contact-form">
+        <br>
+        <form #f="ngForm" (ngSubmit)="onSubmit(f)" class="formformoso">
+            <div class="row">
+                <div class="col">
+                  <input type="text" class="form-control edge" placeholder="Name" name="name" ngModel>
+                </div>
+                <div class="col">
+                  <input type="email" class="form-control edge" placeholder="Email@example.com" name="email" ngModel required email>
+                </div>
+            </div>
+            <br>
+            <div class="form-group">
+                <textarea type="text" class="form-control md-textarea edge" rows="15" id="name" placeholder="Message" name="message" ngModel required></textarea>
+            </div>
+            <br>
+            <button type="submit" class="btn">Submit /></button>
+        </form>
         
 
     </div>
