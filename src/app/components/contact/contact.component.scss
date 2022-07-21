@@ -1,0 +1,37 @@
+.title {
+    font-size: 38px;
+    color: whitesmoke;
+}
+
+p {
+    font-size: 17px;
+}
+
+.grey {
+    opacity: 75%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 7fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+        "side1 contact-txt side2"
+        "side1 contact-form side2";
+}
+
+#side1 {
+    grid-area: side1;
+}
+
+#side2 {
+    grid-area: side2;
+}
+
+#contact-txt {
+    grid-area: contact-txt;
+}
+
+#contact-form {
+    grid-area: contact-form;
+}

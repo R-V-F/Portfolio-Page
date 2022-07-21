@@ -14,6 +14,8 @@ import { P2Component } from './components/p2/p2.component';
 import { Short2Component } from './components/p2/short2/short2.component';
 import { Long2Component } from './components/p2/long2/long2.component';
 import { AboutComponent } from './components/about/about.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -26,13 +28,15 @@ import { AboutComponent } from './components/about/about.component';
     P2Component,
     Short2Component,
     Long2Component,
-    AboutComponent
+    AboutComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MatButtonModule,
-    MatButtonToggleModule
+    MatButtonToggleModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
