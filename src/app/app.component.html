@@ -1,8 +1,8 @@
 <div class="main_container">
-  <nav><app-nav></app-nav></nav>
+  <nav><app-nav [contact_ref]="contact" [about_ref]="about" [projects_ref]="projects"></app-nav></nav>
   <div id="side1"></div>
   <div id="side2"></div>
-  <div id="greetings"><app-greetings></app-greetings></div>
+  <div id="greetings"><app-greetings [contact_ref]="contact"></app-greetings></div>
   <div id="project-txt">
     <br>  
     <span class="grey">&#123;</span> Projects <span class="grey">&#125;</span> 
