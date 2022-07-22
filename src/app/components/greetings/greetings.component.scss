@@ -28,7 +28,7 @@
     background-image: radial-gradient(circle, rgb(255, 255, 255), rgb(71, 118, 165), rgba(7,21,33,1) 60%);
 }
 
-.tab {
+.tab, .tab-big {
     padding-left: 8%;
 }
 
@@ -112,6 +112,7 @@ p {
         padding-left: 5%;
     }
     .hello {
-        //padding-top: 30%;
+        // padding-top: 0;
+        margin-top: 2em;
     }
 }

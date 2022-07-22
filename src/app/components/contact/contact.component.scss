@@ -4,6 +4,7 @@
 /* Importing Datepicker SCSS file. */
 @import "node_modules/ngx-bootstrap/datepicker/bs-datepicker";
 
+
 .title {
     font-size: 38px;
     color: whitesmoke;
@@ -24,13 +25,15 @@ p {
     grid-template-areas: 
         "side1 contact-txt side2"
         "side1 contact-form side2";
+    padding: 0;
 }
 
 .line-wrap {
     color:orange;
 }
 .line {
-    margin-left: -10px;
+    --widthA: 100;
+    
 }
 
 .form-control {
@@ -63,7 +66,12 @@ input, textarea {
     color: white !important;
 }
 
-
+@media only screen and (max-width: 500px) {
+    .container {
+        grid-template-columns: 1fr 7fr 1fr;
+    }
+    
+}
 
 
 

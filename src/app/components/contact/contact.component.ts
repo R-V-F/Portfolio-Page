@@ -11,7 +11,6 @@ export class ContactComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    let formzera = document.querySelector(".formformoso");
   }
 
   onSubmit(form:any) {
@@ -22,7 +21,7 @@ export class ContactComponent implements OnInit {
     };
 
     if(form['value'].name == undefined) console.log('aaa');
-    console.log(typeof(form));
+    //console.log(typeof(form));
     emailjs.send('service_vlzbd2b', 'template_g5lkkrs', template, 'oea2UOD9K3-5GsoF7')
       .then((result: EmailJSResponseStatus) => {
         //console.log(result.text);
