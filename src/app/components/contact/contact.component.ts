@@ -19,8 +19,6 @@ export class ContactComponent implements OnInit {
       to_name: form.value.name,
       message: form.value.message
     };
-
-    if(form['value'].name == undefined) console.log('aaa');
     //console.log(typeof(form));
     emailjs.send('service_vlzbd2b', 'template_g5lkkrs', template, 'oea2UOD9K3-5GsoF7')
       .then((result: EmailJSResponseStatus) => {

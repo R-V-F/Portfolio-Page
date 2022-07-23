@@ -16,9 +16,6 @@ export class AppComponent implements OnInit{
     this.contact = document.getElementById('contact');
     this.projects = document.getElementById('project-txt');
     this.about = document.getElementById('about');
-    console.log(typeof(this.contact));
-    console.log(this.contact);
-
   }
   
 }
