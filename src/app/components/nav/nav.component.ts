@@ -8,7 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class NavComponent implements OnInit {
 
   @Input()
-  contact_ref: any;
+  contact_ref: HTMLBodyElement | undefined;
   @Input()
   projects_ref: any;
   @Input()
@@ -21,7 +21,8 @@ export class NavComponent implements OnInit {
   }
 
   toContact() {
-    this.contact_ref.scrollIntoView();
+    this.contact_ref!.scrollIntoView();
+    console.log(typeof(this.contact_ref));
   }
   toAbout() {
     this.about_ref.scrollIntoView();
