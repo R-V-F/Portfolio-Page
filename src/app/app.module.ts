@@ -17,6 +17,7 @@ import { Long2Component } from './components/p2/long2/long2.component';
 import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ChatComponent } from './components/chat/chat.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     Short2Component,
     Long2Component,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    ChatComponent
   ],
   imports: [
     BrowserModule,
