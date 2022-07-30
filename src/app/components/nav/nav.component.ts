@@ -10,9 +10,9 @@ export class NavComponent implements OnInit {
   @Input()
   contact_ref: HTMLBodyElement | undefined;
   @Input()
-  projects_ref: any;
+  projects_ref: HTMLBodyElement | undefined;
   @Input()
-  about_ref: any;
+  about_ref: HTMLBodyElement | undefined;
 
   constructor() { }
 
@@ -22,12 +22,11 @@ export class NavComponent implements OnInit {
 
   toContact() {
     this.contact_ref!.scrollIntoView();
-    console.log(typeof(this.contact_ref));
   }
   toAbout() {
-    this.about_ref.scrollIntoView();
+    this.about_ref!.scrollIntoView();
   }
   toProjects() {
-    this.projects_ref.scrollIntoView();
+    this.projects_ref!.scrollIntoView();
   }
 }
